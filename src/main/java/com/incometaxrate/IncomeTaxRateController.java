@@ -33,8 +33,6 @@ public class IncomeTaxRateController {
 		IncomeTaxRate incomeTaxRate=  incomeTaxRateRepository.findByRegime(taxRegime,incomeRange); 
 		String port = environment.getProperty("local.server.port");
 		 incomeTaxRate.setEnv(port);
-		 
-	
 		 //return new IncomeTaxRate(101,"0L-2.5L","old",0,port) ;
 		 return incomeTaxRate;
 	}
