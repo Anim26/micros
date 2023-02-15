@@ -18,10 +18,6 @@ public class IncomeTaxRateController {
 	
 	@Autowired
 	private Environment environment;
-	
-
-	
-	
 	/*
 	 * @GetMapping(path="Regime/{taxRegime}/Range/{incomeRange}") IncomeTaxRate
 	 * getTaxRate(@PathVariable String taxRegime,@PathVariable String incomeRange) {
@@ -30,8 +26,6 @@ public class IncomeTaxRateController {
 	 * 
 	 * return incomeTaxRate; }
 	 */
-	 
-	
 	@GetMapping(path="Regime/{taxRegime}/incomeRange/{incomeRange}")
 	
 	 public IncomeTaxRate getByRegime(@PathVariable String taxRegime,@PathVariable String incomeRange ){
